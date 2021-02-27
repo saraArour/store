@@ -11,9 +11,7 @@ const addNewItem = () => {
          const Price= document.createElement("div");
          const Moins= document.createElement("div");
          const Count= document.createElement("input");
-         const Plus= document.createElement("div");
-         const ListCheck = document.createElement("div");
-         
+         const Plus= document.createElement("div"); 
          const ListDelete = document.createElement("div");
          
         
@@ -57,12 +55,7 @@ const addNewItem = () => {
     Count.value = m;
 })
 
-    // traitement de List Check:
-    ListCheck.classList.add("list-check");
-    const checkContent =document.createElement("input");
-    checkContent.setAttribute("type","checkbox");
-    ListCheck.appendChild(checkContent);
-    ListItem.appendChild(ListCheck);
+   
 
     // traitement du heart:
 
@@ -86,11 +79,9 @@ const addNewItem = () => {
    ListDelete.innerHTML="Delete";
    ListItem.appendChild(ListDelete);
    
-   
-  
-
    // clearing input bar
    StoreInput.value="";
+
    //bouton delete
    const index = document.querySelectorAll(".list-item").length - 1;
    ListDelete.addEventListener("click", () => {
@@ -98,24 +89,29 @@ const addNewItem = () => {
     deleteBtn(index);
   });
   
-//total prix;
-const totalPrice=  document.querySelector(".total-price");
-// totalPrice.style.display="flex";
+//total prix:
+//1- total price container:
+const totalPrice= document.querySelector(".totalPrice");
+totalPrice.style.display="flex";
+//2- total text:
+const total= document.querySelector(".total");
+total.innerHTML="Total:"
+//3-pricetotal:
+const priceTotal=document.querySelector(".priceTotal");
 
-totalPrice .addEventListener("click", () => {
-    const checks = document.querySelectorAll(".list-check");
-    for (let i = 0; i < checks.length; i++) {
-      if (checks[i].checked) {
-        checks[i].parentNode.remove();
-        // const prices= document.querySelectorAll(".count); 
-        // totalPrice.innerHTML= prices*Count.value +" $";
-        console.log("pti")
-       
-      }
-     console.log("pri")
+//4- calcul total:
+const Prices=document.querySelectorAll(".price");
+const Counts=document.querySelectorAll(".count");
+
+ total.addEventListener("click", () => {
+    let sum = 0;
+    for (let i = 0; i < Prices.length; i++) {
+        sum += Prices[i]*Counts[i].value;
+       console.log(sum);
     }
-    
-  });
+    priceTotal.value=sum + " $";
+    console.log("sum");
+ })
   }};
   //
   const  deleteBtn = (i) => {
@@ -131,6 +127,23 @@ addBtn.addEventListener("click", () => {
   });
   
 
- 
+ ////////////////////////
+//  const totalPrice=  document.querySelector(".total-price");
+// // totalPrice.style.display="flex";
+
+// totalPrice .addEventListener("click", () => {
+//     const checks = document.querySelectorAll(".list-check");
+//     for (let i = 0; i < checks.length; i++) {
+//       if (checks[i].checked) {
+//         checks[i].parentNode.remove();
+//         // const prices= document.querySelectorAll(".count); 
+//         // totalPrice.innerHTML= prices*Count.value +" $";
+//         console.log("pti")
+       
+//       }
+//      console.log("pri")
+//     }
+    
+//   });
 
   

@@ -140,14 +140,38 @@ body {
     cursor: pointer;
     margin-top: 2.5vh ;
 }
-.total-price{
+.totalPrice{
     display: none;
     align-items: center;
     color:green;
-    width: 60px;
-    height: 40px;
+    width: 100%;
+    height: 10vh;
     background-color: hotpink;
 }
+.total{
+  width: 50px;
+  height: 40px;
+  background-color: indigo;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.priceTotal{
+  width: 50px;
+  height: 40px;
+  font-family: inherit;
+  font-size: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db3030;
+  font-size: 20px;
+  margin-top: 2.5vh ;
+  text-align: center;
+}
+
 
 
   
