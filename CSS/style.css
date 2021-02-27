@@ -1,0 +1,153 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "oswald";
+  }
+  .navbar {
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    background-color:blue;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .container {
+    position: relative;
+    top: 20vh;
+    width: 100%;
+    min-height: 80vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .store-container {
+    width: 80%;
+  }
+  .input-container {
+    height: 10vh;
+    display: flex;
+    font-size: 20px;
+  }
+  .store-input {
+    flex: 4;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 20px;
+  }
+  .add-btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .list-content {
+    margin-top: 40px;
+    width: 100%;
+    
+    
+  }
+  
+  .list-item {
+    margin-bottom: 10px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #e9ebed;
+    padding-left: 20px;
+    border-radius: 4px;
+  }
+  .list-text {
+    flex: 2;
+    display: flex;
+    align-items: center;
+  }
+  .price{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color:green;
+  }
+  .moins{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .count{
+    flex: 1 ;
+    font-family: inherit;
+    font-size: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 10px;
+    background-color: #db3030;
+    font-size: 20px;
+    margin-top: 2.5vh ;
+    text-align: center;
+  }
+  .plus{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .list-check {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .list-delete {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #db3030;
+  }
+  
+  .h_container{
+   
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    width:35px;
+    height:35px;
+    text-align:center;
+    line-height:45px;
+    font-size: 25px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 2.5vh ;
+}
+.total-price{
+    display: none;
+    align-items: center;
+    color:green;
+    width: 60px;
+    height: 40px;
+    background-color: hotpink;
+}
+
+
+  
